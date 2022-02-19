@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Task01 {
 
 	public static void main(String[] args) {
-		// Äàíû äâà óãëà òðåóãîëüíèêà (â ãðàäóñàõ). Îïðåäåëèòü, ñóùåñòâóåò ëè òàêîé
-		// òðåóãîëüíèê, è åñëè äà, òî áóäåò ëè îí ïðÿìîóãîëüíûì.
+		// Ã„Ã Ã­Ã» Ã¤Ã¢Ã  Ã³Ã£Ã«Ã  Ã²Ã°Ã¥Ã³Ã£Ã®Ã«Ã¼Ã­Ã¨ÃªÃ  (Ã¢ Ã£Ã°Ã Ã¤Ã³Ã±Ã Ãµ). ÃŽÃ¯Ã°Ã¥Ã¤Ã¥Ã«Ã¨Ã²Ã¼, Ã±Ã³Ã¹Ã¥Ã±Ã²Ã¢Ã³Ã¥Ã² Ã«Ã¨ Ã²Ã ÃªÃ®Ã©
+		// Ã²Ã°Ã¥Ã³Ã£Ã®Ã«Ã¼Ã­Ã¨Ãª, Ã¨ Ã¥Ã±Ã«Ã¨ Ã¤Ã , Ã²Ã® Ã¡Ã³Ã¤Ã¥Ã² Ã«Ã¨ Ã®Ã­ Ã¯Ã°Ã¿Ã¬Ã®Ã³Ã£Ã®Ã«Ã¼Ã­Ã»Ã¬
 
 		int angle1;
 		int angle2;
 		int angle3;
 
 		angle1 = EnterFromConsole("angle1 >> ");
-		while (angle1 <= 0) { // íå äà¸ì ââîäèòü îòðèöàòåëüíûå óãëû
+		while (angle1 <= 0) { // Ã­Ã¥ Ã¤Ã Â¸Ã¬ Ã¢Ã¢Ã®Ã¤Ã¨Ã²Ã¼ Ã®Ã²Ã°Ã¨Ã¶Ã Ã²Ã¥Ã«Ã¼Ã­Ã»Ã¥ Ã³Ã£Ã«Ã»
 			System.out.println("angle must been greater than 0");
 			angle1 = EnterFromConsole("angle1 >> ");
 		}
@@ -24,11 +24,11 @@ public class Task01 {
 			angle2 = EnterFromConsole("angle1 >> ");
 		}
 
-		if (angle1 + angle2 < 180) { // ñóììà 3 óãëîâ â òðåóãîëüíèêå = 180
+		if (angle1 + angle2 < 180) { // Ã±Ã³Ã¬Ã¬Ã  3 Ã³Ã£Ã«Ã®Ã¢ Ã¢ Ã²Ã°Ã¥Ã³Ã£Ã®Ã«Ã¼Ã­Ã¨ÃªÃ¥ = 180
 			System.out.println("The triangle exists.");
 			angle3 = 180 - angle1 - angle2;
 
-			if (angle1 == 90 || angle2 == 90 || angle3 == 90) { // ïðîâåðÿåì êàæäûé óãîë, íå ïðÿìîé ëè îí
+			if (angle1 == 90 || angle2 == 90 || angle3 == 90) { // Ã¯Ã°Ã®Ã¢Ã¥Ã°Ã¿Ã¥Ã¬ ÃªÃ Ã¦Ã¤Ã»Ã© Ã³Ã£Ã®Ã«, Ã­Ã¥ Ã¯Ã°Ã¿Ã¬Ã®Ã© Ã«Ã¨ Ã®Ã­
 				System.out.println("This is right triangle.");
 			} else
 				System.out.println("This isn't right triangle.");
