@@ -1,4 +1,4 @@
-package by.jonline.mod1.Basic.branching;
+package by.jonline.mod1.basic.branching;
 
 public class Task02 {
 
